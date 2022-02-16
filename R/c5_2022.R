@@ -26,8 +26,8 @@ p_c5 <-
   add_row(Year = 1863, Slave = 97, Free = 3) %>% 
   pivot_longer(Slave:Free) %>% 
   ggplot(aes(x = Year, y = value)) + 
-  geom_area(aes(fill = name), color = "#EAD1B9", size = 1, show.legend = FALSE, outline.type = "full") +
-  geom_vline(xintercept = year_lines, color = "#EAD1B9", size = 1) +
+  geom_area(aes(fill = name), color = "#EAD1B9", size = 0.5, show.legend = FALSE, outline.type = "full") +
+  geom_vline(xintercept = year_lines, color = "#EAD1B9", size = 0.5) +
   coord_flip(ylim = c(97, 100)) + 
   scale_x_reverse(
     "", 
@@ -50,21 +50,21 @@ p_c5 <-
   ) +
   theme(
     axis.ticks = element_blank(),
-    axis.text.x.top = element_text(size = 24),
-    axis.text.y = element_text(hjust = -10, size = 24),
+    axis.text.x.top = element_text(size = 20),
+    axis.text.y = element_text(hjust = -10, size = 20),
     panel.grid.major = element_line(color = "#EAD1B9"),
     panel.grid.minor = element_line(color = "#EAD1B9"),
     panel.background = element_rect(fill = "#EAD1B9"),
-    plot.title = element_text(hjust = 0.5, vjust = 1, face = "bold", size = 40),
-    plot.caption = element_text(vjust = -15, hjust = 1.15),
+    plot.title = element_text(hjust = 0.5, vjust = 1, face = "bold", size = 32),
+    plot.caption = element_text(vjust = -6, hjust = 4.5, size = 16),
     plot.background = element_rect(fill = "#EAD1B9", color = NA),
     plot.margin = unit(c(1, 1, 1, 1), "cm")
   )
 
 # Draw label of secondary axis 
 plot_grid(p_c5) + 
-  draw_text("PERCENT", x = 0.86, y = 0.91, size = 20) +
-  draw_text("OF", x = 0.86, y = 0.90, size = 20) +
-  draw_text("FREE NEGROES", x = 0.86, y = 0.89, size = 20)
+  draw_text("PERCENT", x = 0.82, y = 0.87, size = 16) +
+  draw_text("OF", x = 0.82, y = 0.85, size = 16) +
+  draw_text("FREE NEGROES", x = 0.82, y = 0.83, size = 16)
 
 ggsave(last_plot(), filename = here("figures", "c5_2022.png"), height = 5, width = 3)
