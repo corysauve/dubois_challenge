@@ -7,5 +7,5 @@ My recreations of W.E.B. DuBois data portraits with R. You can see the original 
 ## 2022 Challenge 
 
 ### Challenge 5: 
-![./figures/ch5_2022.png](https://github.com/corysauve/tidytuesday/blob/master/figures/ch5_2022.png)
+![./figures/ch5_2022.png](https://github.com/corysauve/tidytuesday/blob/main/figures/c5_2022.png)
 
