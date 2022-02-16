@@ -67,4 +67,4 @@ plot_grid(p_c5) +
   draw_text("OF", x = 0.86, y = 0.90, size = 20) +
   draw_text("FREE NEGROES", x = 0.86, y = 0.89, size = 20)
 
-ggsave(last_plot(), filename = here("figures", "c5_2022.png"), height = 8, width = 4)
+ggsave(last_plot(), filename = here("figures", "c5_2022.png"), height = 5, width = 3)

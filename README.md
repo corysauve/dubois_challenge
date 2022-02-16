@@ -1,4 +1,4 @@
-# dubois_challenge
+# W.E.B. DuBois Challenge
 
 My recreations of W.E.B. DuBois data portraits with R. You can see the original data portraits [here](https://github.com/ajstarks/dubois-data-portraits)
 
